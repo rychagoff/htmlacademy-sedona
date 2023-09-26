@@ -8,7 +8,7 @@
 
     <header class="page-header">
       <a class="logo" href="#">
-        <img src="" alt="Логотип агрегатора гостиниц Седоны">
+        <img src="#" alt="Логотип агрегатора гостиниц Седоны">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -19,7 +19,7 @@
             <a href="#">О Седоне</a>
           </li>
           <li class="navigation-list__item">
-            <a href="catalog.html">Гостиницы</a>
+            <a class="is-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -104,8 +104,11 @@
           </fieldset>
           <fieldset class="filter-form__group">
             <legend class="title">Стоимость</legend>
-            <input type="text" value="0">
-            <input type="text" value="9000">
+            <div class="inputs">
+              <input type="text" value="0">
+              <input type="text" value="9000">
+            </div>
+            <div class="range"></div>
           </fieldset>
           <div class="filter-form__group">
             <button class="button" type="submit">Применить</button>
@@ -145,7 +148,7 @@
         <ul class="catalog-product">
           <li class="catalog-product__card">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__image" alt="Amara Resort & Spa">
+              <img class="catalog-product__image" src="#" alt="Amara Resort & Spa">
               <h3 class="catalog-product__title title">Amara Resort & Spa</h3>
             </a>
             <div class="catalog-product__price">
@@ -157,17 +160,43 @@
                 <a class="button" href="#">Подробнее</a>
               </li>
               <li class="catalog-product__button">
-                <button class="button" href="#">В избранное</button>
+                <button class="button">В избранное</button>
               </li>
             </ul>
             <div class="catalog-product__rating">
-              <img class="star" src="#" alt="Выбор рейтинга">
+              <ul class="stars-list">
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 1">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 2">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 3">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 4">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 5">
+                  </a>
+                </li>
+              </ul>
               <span class="button">Рейтинг: <output>9,0</output></span>
             </div>
           </li>
           <li class="catalog-product__card">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__image" alt="Villas at Poco Diablo">
+              <img class="catalog-product__image" src="#" alt="Villas at Poco Diablo">
               <h3 class="catalog-product__title title">Villas at Poco Diablo</h3>
             </a>
             <div class="catalog-product__price">
@@ -179,17 +208,43 @@
                 <a class="button" href="#">Подробнее</a>
               </li>
               <li class="catalog-product__button">
-                <button class="button is-current" href="#">В избранном</button>
+                <button class="button is-current">В избранном</button>
               </li>
             </ul>
             <div class="catalog-product__rating">
-              <img class="star" src="#" alt="Выбор рейтинга">
+              <ul class="stars-list">
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 1">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 2">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 3">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 4">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 5">
+                  </a>
+                </li>
+              </ul>
               <span class="button">Рейтинг: <output>9,0</output></span>
             </div>
           </li>
           <li class="catalog-product__card">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__image" alt="Desert Quail Inn">
+              <img class="catalog-product__image" src="#" alt="Desert Quail Inn">
               <h3 class="catalog-product__title title">Desert Quail Inn</h3>
             </a>
             <div class="catalog-product__price">
@@ -201,17 +256,43 @@
                 <a class="button" href="#">Подробнее</a>
               </li>
               <li class="catalog-product__button">
-                <button class="button" href="#">В избранное</button>
+                <button class="button">В избранное</button>
               </li>
             </ul>
             <div class="catalog-product__rating">
-              <img class="star" src="#" alt="Выбор рейтинга">
+              <ul class="stars-list">
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 1">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 2">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 3">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 4">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 5">
+                  </a>
+                </li>
+              </ul>
               <span class="button">Рейтинг: <output>9,0</output></span>
             </div>
           </li>
           <li class="catalog-product__card">
             <a class="catalog-product__link" href="#">
-              <img class="catalog-product__image" alt="GreenTree Inn">
+              <img class="catalog-product__image" src="#" alt="GreenTree Inn">
               <h3 class="catalog-product__title title">GreenTree Inn</h3>
             </a>
             <div class="catalog-product__price">
@@ -223,11 +304,37 @@
                 <a class="button" href="#">Подробнее</a>
               </li>
               <li class="catalog-product__button">
-                <button class="button" href="#">В избранное</button>
+                <button class="button">В избранное</button>
               </li>
             </ul>
             <div class="catalog-product__rating">
-              <img class="star" src="#" alt="Выбор рейтинга">
+              <ul class="stars-list">
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 1">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 2">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 3">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 4">
+                  </a>
+                </li>
+                <li class="stars-list__item">
+                  <a href="#">
+                    <img class="star" src="#" alt="Рейтинг 5">
+                  </a>
+                </li>
+              </ul>
               <span class="button">Рейтинг: <output>9,0</output></span>
             </div>
           </li>
@@ -245,6 +352,9 @@
             </li>
             <li class="pagination-list__item">
               <a class="button" href="#">4</a>
+            </li>
+            <li class="pagination-list__item">
+              <a class="button" href="#">...</a>
             </li>
             <li class="pagination-list__item">
               <a class="button" href="#">10</a>
