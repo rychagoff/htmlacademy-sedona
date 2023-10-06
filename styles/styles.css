@@ -12,3 +12,13 @@
   src: url(../fonts/ptsans-700.woff2);
   font-display: swap;
 }
+
+body {
+  font-family: "PT-Sans", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333;
+  background-color: #fff;
+}
