@@ -34,6 +34,7 @@ a {
 }
 
 .button {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -41,6 +42,7 @@ a {
   background-color: #756157;
 }
 
+/* INDEX */
 /* HEADER */
 
 .navigation-list__link {
@@ -143,6 +145,7 @@ a {
   background-color: #82B3D3;
   background-image: url(../images/subscribe-bg.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   color: #fff;
 }
@@ -178,4 +181,112 @@ a {
   font-size: 40px;
   font-style: normal;
   line-height: 40px;
+}
+
+/* CATALOG-PAGE */
+/* FILTER */
+
+.filter {
+  background-color: #82B3D3;
+  background-image: url(../images/filter-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.filter-header__title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #fff;
+}
+
+.breadcrumbs-list__link {
+  font-size: 16px;
+  color: #fff;
+}
+
+.filter-form__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.filter-form__label {
+  display: block;
+  line-height: 23px;
+}
+
+.range-control__input input[type=text] {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.submit {
+  background-color: #82B3D3;
+}
+.reset {
+  background-color: transparent;
+}
+
+/* HEADER */
+
+.catalog-header__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.catalog-header__sorting {
+  font-family: "PT-Sans", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.view-list__button {
+  background-color: transparent;
+  color: #000;
+}
+
+/* PRODUCT */
+
+.card-link__title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.card-info__price {
+  font-weight: 400;
+}
+
+.card-buttons__favorite {
+  background-color: #82B3D3;
+}
+
+.card-buttons__favorite.is-current {
+  background-color: #7DB54F;
+}
+
+.card-rating__button {
+  background-color: #F2F2F2;
+  font-weight: 400;
+  color: inherit;
+}
+
+/* PAGINATION */
+
+.pagination-list__link {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+.pagination-list__link.is-current,
+.pagination-list__link.is-more {
+  color: inherit;
+}
+.pagination-list__link.is-more {
+  background-color: #fff;
+}
+.pagination-list__link.is-current {
+  background-color: #F2F2F2;
 }
