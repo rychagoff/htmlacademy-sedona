@@ -41,6 +41,16 @@ main {
   flex-grow: 1;
 }
 
+.container {
+  width: 1090px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.line {
+  display: flex;
+}
+
 .page-header, .main-page,
 .inner-page, .page-footer {
   background-color: #fff;
@@ -70,10 +80,32 @@ img {
 /* INDEX */
 /* HEADER */
 
+.logo {
+  width: 140px;
+  margin-right: 30px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navigation-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-list__link {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.navigation-user {
+  margin-left: auto;
 }
 
 /* HERO */
