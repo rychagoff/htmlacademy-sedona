@@ -208,6 +208,27 @@ img {
 
 /* ADVANTAGES-SERVICE */
 
+.advantages-service__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-service__content {
+  width: 400px;
+  height: 385px;
+}
+
+.advantages-service__item .line {
+  height: 100%;
+  width: 230px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .advantages-service__item {
   background-color: rgba(131, 179, 211, 0.12);
 }
