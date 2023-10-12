@@ -108,7 +108,7 @@ img {
 
 /* HERO */
 
-.hero-welcome {
+.hero__wrapper.welcome {
   background-color: #81B3D3;
   background-image: url(../images/hero-bg.jpg);
   background-size: cover;
@@ -116,21 +116,12 @@ img {
   background-repeat: no-repeat;
 }
 
-.hero-welcome__line {
-  justify-content: center;
-}
-
-.hero-text__line {
-  flex-direction: column;
-  text-align: center;
-}
-
-.hero-text__title {
+.hero__title {
   font-size: 30px;
   line-height: 36px;
 }
 
-.hero-text__description {
+.hero__description {
   font-size: 22px;
   line-height: 26px;
 }
