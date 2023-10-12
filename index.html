@@ -3,30 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 
     <header class="page-header" data-test="header">
 
-      <a class="logo" href="#">
+      <a class="logo link" href="#">
         <img class="logo-image" src="images/logo.svg" alt="Логотип агрегатора гостиниц Седоны" width="140" height="70">
       </a>
 
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-list__item">
-            <a class="navigation-list__link is-current">Главная</a>
+            <a class="navigation-list__link link is-current">Главная</a>
           </li>
           <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">О Седоне</a>
+            <a class="navigation-list__link link" href="#">О Седоне</a>
           </li>
           <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-list__link link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">
+            <a class="navigation-list__link link" href="#">
               <img src="images/search.svg" alt="" width="20" height="20">
               <span class="visually-hidden">
                 Поиск
@@ -34,7 +36,7 @@
             </a>
           </li>
           <li class="navigation-list__item">
-            <a class="navigation-list__link" href="#">
+            <a class="navigation-list__link link" href="#">
               <img src="images/heart.svg" alt="" width="20" height="20">
               <span class="visually-hidden">
                 Избранное
@@ -53,10 +55,12 @@
     <main class="main-page" data-test="main">
 
       <section class="hero" data-test="hero">
-        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <img class="hero__img" src="images/welcome.svg" alt="Добро пожаловать в Седону!" width="458" height="352">
+        <div class="hero__wrapper wrapper welcome">
+          <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+          <img class="hero__img" src="images/welcome.svg" alt="Добро пожаловать в Седону!" width="458" height="352">
+        </div>
         <div class="hero__wrapper wrapper">
-          <h2 class="hero__title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+          <h2 class="hero__title title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
           <p class="hero__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
       </section>
@@ -66,32 +70,36 @@
         <section class="advantages-grid">
           <ul class="advantages-grid__list">
             <li class="advantages-grid__item advantages-grid--image">
-              <h3 class="advantages-grid__title">Настоящий городок</h3>
-              <p class="advantages-grid__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="wrapper">
+                <h3 class="advantages-grid__title title">Настоящий городок</h3>
+                <p class="advantages-grid__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img src="images/advantages/photo-1.jpg" alt="Вид из окна гостиницы на внутренний двор" width="800" height="385">
             </li>
             <li class="advantages-grid__item">
-              <h3 class="advantages-grid__title">Небольшая площадь</h3>
+              <h3 class="advantages-grid__title title">Небольшая площадь</h3>
               <p class="advantages-grid__text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantages-grid__item">
-              <h3 class="advantages-grid__title">Красивая дорога</h3>
+              <h3 class="advantages-grid__title title">Красивая дорога</h3>
               <p class="advantages-grid__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages-grid__item">
-              <h3 class="advantages-grid__title">Мало туристов</h3>
+              <h3 class="advantages-grid__title title">Мало туристов</h3>
               <p class="advantages-grid__text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-grid__item advantages-grid--image">
-              <h3 class="advantages-grid__title">Там есть мост дьявола</h3>
-              <p class="advantages-grid__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="wrapper">
+                <h3 class="advantages-grid__title title">Там есть мост дьявола</h3>
+                <p class="advantages-grid__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
               <img src="images/advantages/photo-2.jpg" alt="Фото карьера 'Мост дьявола'" width="800" height="385">
             </li>
           </ul>
         </section>
         <section class="advantages-slogan slogan">
           <div class="advantages-slogan__wrapper wrapper">
-            <h2 class="advantages-slogan__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <h2 class="advantages-slogan__title title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="advantages-slogan__description">Опытный персонал и качественное обслуживание!</p>
           </div>
         </section>
@@ -99,17 +107,17 @@
           <ul class="advantages-service__list">
             <li class="advantages-service__item">
               <img class="advantages-service__image" src="images/advantages/house.svg" alt="Иконка домика" width="76" height="76">
-              <h3 class="advantages-service__title">Жильё</h3>
+              <h3 class="advantages-service__title title">Жильё</h3>
               <p class="advantages-service__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="advantages-service__item">
               <img class="advantages-service__image" src="images/advantages/food.svg" alt="Иконка бургера" width="76" height="76">
-              <h3 class="advantages-service__title">Еда</h3>
+              <h3 class="advantages-service__title title">Еда</h3>
               <p class="advantages-service__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="advantages-service__item">
               <img class="advantages-service__image" src="images/advantages/souvenir.svg" alt="Иконка подарка" width="76" height="76">
-              <h3 class="advantages-service__title">Сувениры</h3>
+              <h3 class="advantages-service__title title">Сувениры</h3>
               <p class="advantages-service__text">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
@@ -119,7 +127,7 @@
       <section class="search" data-test="search">
         <div class="search-slogan slogan">
           <div class="search-slogan__wrapper wrapper">
-            <h2 class="search-slogan__title">Заинтересовались?</h2>
+            <h2 class="search-slogan__title title">Заинтересовались?</h2>
             <p class="search-slogan__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
         </div>
@@ -131,7 +139,7 @@
       <section class="subscribe" data-test="subscribe">
         <div class="subscribe-slogan slogan">
           <div class="subscribe-slogan__wrapper wrapper">
-            <h2 class="subscribe-slogan__title">Подпишитесь на рассылку</h2>
+            <h2 class="subscribe-slogan__title title">Подпишитесь на рассылку</h2>
             <p class="subscribe-slogan__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
         </div>
@@ -170,12 +178,12 @@
 
       <div class="contacts">
         <address class="contacts-address">
-          <a class="contacts-address__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts-address__phone link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
       </div>
 
       <div class="footer-logo">
-        <a class="footer-logo__link" href="https://htmlacademy.ru/">
+        <a class="footer-logo__link link" href="https://htmlacademy.ru/">
           <img class="footer-logo__image" src="images/logo-footer.svg" alt="Логотип HTML-Академии" width="115" height="33">
         </a>
       </div>
