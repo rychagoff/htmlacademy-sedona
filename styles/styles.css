@@ -290,6 +290,17 @@ img {
 
 /* FOOTER */
 
+.page-footer .line {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .social-list__link {
   background-color: #fff;
   color: inherit;
