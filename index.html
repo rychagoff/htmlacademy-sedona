@@ -207,16 +207,23 @@
       </section>
 
       <section class="subscribe" data-test="subscribe">
-        <div class="subscribe-slogan slogan">
-          <div class="subscribe-slogan__wrapper wrapper">
-            <h2 class="subscribe-slogan__title title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-slogan__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
+        <div class="container">
+          <div class="line">
+
+            <div class="subscribe-text">
+              <h2 class="subscribe-slogan__title title">Подпишитесь на рассылку</h2>
+              <p class="subscribe-slogan__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            </div>
+
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
+              <button class="subscribe-form__button button" type="submit">Подписаться</button>
+            </form>
+
           </div>
         </div>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
-          <button class="subscribe-form__button button" type="submit">Подписаться</button>
-        </form>
+
       </section>
 
     </main>
