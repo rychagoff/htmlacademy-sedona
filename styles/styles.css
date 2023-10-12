@@ -49,6 +49,8 @@ main {
 
 .line {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-header, .main-page,
@@ -79,6 +81,10 @@ img {
 
 /* INDEX */
 /* HEADER */
+
+.page-header .line {
+  flex-direction: row;
+}
 
 .logo {
   width: 140px;
@@ -125,6 +131,10 @@ img {
 
 /* ADVANTAGES */
 
+.advantages-text {
+  text-align: center;
+}
+
 .advantages-text__title {
   font-size: 30px;
   line-height: 36px;
@@ -135,6 +145,14 @@ img {
   line-height: 26px;
 }
 
+.advantages-grid__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .advantages-grid__item {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -143,18 +161,37 @@ img {
   background-color: rgba(131, 179, 211, 0.20);
 }
 
-.advantages-grid--image {
-  background-color: #82B3D3;
-  color: #fff;
+.advantages-grid__text {
+  width: 400px;
+  height: 385px;
 }
 
-.advantages-grid--image .advantages-grid__title {
-  color: #fff;
+.advantages-grid__item .line {
+  height: 100%;
+  width: 230px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .advantages-grid__title {
   font-size: 24px;
   line-height: 28px;
+}
+
+.advantages-grid--image {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #82B3D3;
+  color: #fff;
+}
+
+.advantages-grid--image:nth-of-type(5n) {
+  flex-direction: row-reverse;
+}
+
+.advantages-grid--image .advantages-grid__title {
+  color: #fff;
 }
 
 /* ADVANTAGES-SLOGAN */
