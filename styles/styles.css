@@ -51,7 +51,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .page-header, .main-page,
@@ -324,6 +324,10 @@ img {
   color: #fff;
 }
 
+.filter .line {
+  align-items: stretch;
+}
+
 .filter-header__title {
   font-size: 60px;
   line-height: 78px;
@@ -333,6 +337,20 @@ img {
 .breadcrumbs-list__link {
   font-size: 16px;
   color: inherit;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-form__group {
+  max-width: 280px;
+  margin-right: 70px;
+}
+
+.filter-form__price {
+  margin-left: auto;
 }
 
 .filter-form__title {
@@ -360,12 +378,24 @@ img {
 
 /* HEADER */
 
+.catalog .line {
+  align-items: start;
+}
+
+.catalog-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .catalog-header__title {
+  flex-grow: 1;
   font-size: 30px;
   line-height: 36px;
 }
 
 .catalog-header__sorting {
+  margin-right: 70px;
   font-family: "PT-Sans", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -377,6 +407,15 @@ img {
 }
 
 /* PRODUCT */
+
+.catalog-product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .card-link__title {
   font-size: 24px;
@@ -402,6 +441,13 @@ img {
 }
 
 /* PAGINATION */
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 .pagination-list__link {
   font-size: 20px;
