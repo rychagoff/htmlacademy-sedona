@@ -110,7 +110,7 @@ img {
 
 /* HERO */
 
-.hero__wrapper.welcome {
+.hero-welcome {
   background-color: #81B3D3;
   background-image: url(../images/hero-bg.jpg);
   background-size: cover;
@@ -118,17 +118,22 @@ img {
   background-repeat: no-repeat;
 }
 
-.hero__title {
+.hero-welcome__img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ADVANTAGES */
+
+.advantages-text__title {
   font-size: 30px;
   line-height: 36px;
 }
 
-.hero__description {
+.advantages-text__description {
   font-size: 22px;
   line-height: 26px;
 }
-
-/* ADVANTAGES */
 
 .advantages-grid__item {
   background-color: rgba(131, 179, 211, 0.12);
