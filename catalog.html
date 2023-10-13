@@ -84,7 +84,7 @@
 
               <fieldset class="filter-form__group filter-form__group--box">
                 <legend class="filter-form__title">Инфраструктура</legend>
-                <ul class="filter-form__list">
+                <ul class="filter-form__list list">
                   <li class="filter-form__item">
                     <label class="filter-form__label">
                       <input type="checkbox" name="pool" checked>Бассейн
@@ -128,8 +128,14 @@
                 <legend class="filter-form__title">Стоимость</legend>
                 <div class="filter-form__range range-control">
                   <div class="range-control__input">
-                    <input type="text" value="0">
-                    <input type="text" value="9000">
+                    <label class="range-control__label range-control__label--min">
+                      <input type="text" name="min" value="0" placeholder="от">
+                      <span>от</span>
+                    </label>
+                    <label class="range-control__label range-control__label--max">
+                      <input type="text" name="max" value="9000">
+                      <span>до</span>
+                    </label>
                   </div>
                   <div class="range-control__button"></div>
                 </div>
@@ -191,7 +197,7 @@
                     <span class="card-info__text">Гостиница</span>
                     <b class="card-info__price">От 4000 ₽</b>
                   </div>
-                  <ul class="card-buttons">
+                  <ul class="card-buttons list">
                     <li class="card-buttons__item">
                       <a class="card-buttons__link button" href="#">Подробнее</a>
                     </li>
@@ -220,7 +226,7 @@
                     <span class="card-info__text">Гостиница</span>
                     <b class="card-info__price">От 5000 ₽</b>
                   </div>
-                  <ul class="card-buttons">
+                  <ul class="card-buttons list">
                     <li class="card-buttons__item">
                       <a class="card-buttons__link button" href="#">Подробнее</a>
                     </li>
@@ -249,7 +255,7 @@
                     <span class="card-info__text">Гостиница</span>
                     <b class="card-info__price">От 2500 ₽</b>
                   </div>
-                  <ul class="card-buttons">
+                  <ul class="card-buttons list">
                     <li class="card-buttons__item">
                       <a class="card-buttons__link button" href="#">Подробнее</a>
                     </li>
