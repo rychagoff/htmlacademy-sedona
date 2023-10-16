@@ -37,7 +37,7 @@ body {
   background-color: #f2f2f2;
 }
 
-main {
+.main-page, .inner-page {
   flex-grow: 1;
 }
 
@@ -60,10 +60,14 @@ main {
 }
 
 .title {
+  text-transform: uppercase;
   color: #000;
+  margin: 0;
 }
 
 .link {
+  display: block;
+  text-decoration: none;
   color: #000;
 }
 
@@ -82,6 +86,8 @@ img {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
   color: #fff;
   background-color: #756157;
 }
@@ -97,6 +103,25 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.wrapper-text {
+  width: 800px;
+  margin: auto;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.wrapper-text__title {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+
+.wrapper-text__description {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
+}
+
 /* INDEX */
 /* HEADER */
 
@@ -107,6 +132,8 @@ img {
 .logo {
   width: 140px;
   margin-right: 30px;
+  margin-bottom: -6px;
+  z-index: 999;
 }
 
 .navigation {
@@ -117,9 +144,11 @@ img {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-list__link {
+  padding: 20px 16px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -130,6 +159,11 @@ img {
 }
 
 /* HERO */
+
+.hero-welcome {
+  padding-top: 50px;
+  padding-bottom: 82px;
+}
 
 .hero-welcome {
   background-color: #81B3D3;
@@ -145,16 +179,6 @@ img {
 }
 
 /* ADVANTAGES */
-
-.advantages-text__title {
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.advantages-text__description {
-  font-size: 22px;
-  line-height: 26px;
-}
 
 .advantages-grid__list {
   display: flex;
@@ -185,6 +209,11 @@ img {
 .advantages-grid__title {
   font-size: 24px;
   line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.advantages-grid__description {
+  margin: 0;
 }
 
 .advantages-grid--image {
@@ -204,15 +233,7 @@ img {
 
 /* ADVANTAGES-SLOGAN */
 
-.advantages-slogan__title {
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.advantages-slogan__description {
-  font-size: 22px;
-  line-height: 26px;
-}
+/*  */
 
 /* ADVANTAGES-SERVICE */
 
@@ -242,21 +263,24 @@ img {
   background-color: #fff;
 }
 
+.advantages-service__image {
+  margin-bottom: 30px;
+}
+
 .advantages-service__title {
   font-size: 24px;
   line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.advantages-service__text {
+  margin: 0;
 }
 
 /* SEARCH */
 
-.search-slogan__title {
-  font-size: 30px;
-  line-height: 36px;
-}
-
 .search-slogan__description {
-  font-size: 22px;
-  line-height: 26px;
+  margin-bottom: 54px;
 }
 
 .search-links__link {
@@ -277,13 +301,10 @@ img {
 
 .subscribe-slogan__title {
   color: #fff;
-  font-size: 30px;
-  line-height: 36px;
 }
 
 .subscribe-slogan__description {
-  font-size: 22px;
-  line-height: 26px;
+  margin-bottom: 54px;
 }
 
 .subscribe-form__input {
@@ -298,6 +319,10 @@ img {
 
 /* FOOTER */
 
+.page-footer {
+  padding: 40px 0 30px;
+}
+
 .page-footer .line {
   flex-direction: row;
   justify-content: space-between;
@@ -310,6 +335,11 @@ img {
 }
 
 .social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 40px;
   background-color: #fff;
   color: inherit;
 }
@@ -317,7 +347,7 @@ img {
 .contacts-address__phone {
   font-size: 40px;
   font-style: normal;
-  line-height: 40px;
+  line-height: 50px;
 }
 
 /* CATALOG-PAGE */
