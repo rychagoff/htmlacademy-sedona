@@ -49,7 +49,7 @@
               </li>
             </ul>
             <div class="navigation-button">
-              <a class="navigation-button__link button" href="#">Хочу сюда!</a>
+              <a class="navigation-button__link button button--small" href="#">Хочу сюда!</a>
             </div>
           </nav>
 
@@ -72,19 +72,22 @@
       <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
 
-        <section class="advantages-text">
+        <div class="advantages-text">
 
           <div class="container">
             <div class="line">
 
-              <h2 class="advantages-text__title title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-              <p class="advantages-text__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+              <div class="wrapper-text">
+                <h2 class="advantages-text__title wrapper-text__title title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+                <p class="advantages-text__description wrapper-text__description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+              </div>
 
             </div>
           </div>
-        </section>
 
-        <section class="advantages-grid">
+        </div>
+
+        <div class="advantages-grid">
           <ul class="advantages-grid__list list">
 
             <li class="advantages-grid__item advantages-grid--image">
@@ -135,20 +138,22 @@
             </li>
 
           </ul>
-        </section>
+        </div>
 
-        <section class="advantages-slogan slogan">
+        <div class="advantages-slogan slogan">
 
           <div class="container">
             <div class="line">
 
-              <h2 class="advantages-slogan__title title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-              <p class="advantages-slogan__description">Опытный персонал и качественное обслуживание!</p>
+              <div class="wrapper-text">
+                <h2 class="advantages-slogan__title wrapper-text__title title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
+                <p class="advantages-slogan__description wrapper-text__description">Опытный персонал и качественное обслуживание!</p>
+              </div>
 
             </div>
           </div>
 
-        </section>
+        </div>
 
         <section class="advantages-service">
           <ul class="advantages-service__list list">
@@ -192,13 +197,14 @@
         <div class="container">
           <div class="line">
 
-            <div class="search-text">
-              <h2 class="search-slogan__title title">Заинтересовались?</h2>
-              <p class="search-slogan__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            </div>
-
-            <div class="search-links">
-              <a class="search-links__link button" href="catalog.html">Поиск гостиницы в Седоне</a>
+            <div class="wrapper-text">
+              <div class="search-text">
+                <h2 class="search-slogan__title wrapper-text__title title">Заинтересовались?</h2>
+                <p class="search-slogan__description wrapper-text__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+              </div>
+              <div class="search-links">
+                <a class="search-links__link button button--big" href="catalog.html">Поиск гостиницы в Седоне</a>
+              </div>
             </div>
 
           </div>
@@ -211,15 +217,16 @@
         <div class="container">
           <div class="line">
 
-            <div class="subscribe-text">
-              <h2 class="subscribe-slogan__title title">Подпишитесь на рассылку</h2>
-              <p class="subscribe-slogan__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <div class="wrapper-text">
+              <div class="subscribe-text">
+                <h2 class="subscribe-slogan__title wrapper-text__title title">Подпишитесь на рассылку</h2>
+                <p class="subscribe-slogan__description wrapper-text__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+              </div>
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
+                <button class="subscribe-form__button button button--big" type="submit">Подписаться</button>
+              </form>
             </div>
-
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
-              <button class="subscribe-form__button button" type="submit">Подписаться</button>
-            </form>
 
           </div>
         </div>
