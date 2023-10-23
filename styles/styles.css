@@ -40,7 +40,8 @@ img {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
   font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
@@ -172,6 +173,7 @@ input[type="email"] {
 }
 
 .navigation-list__link {
+  display: block;
   padding: 20px 16px;
   font-size: 20px;
   font-weight: 700;
