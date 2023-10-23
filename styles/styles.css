@@ -455,7 +455,7 @@ input[type="email"] {
 }
 
 .filter-form__group--price {
-  width: 288px;
+  max-width: 288px;
   margin-left: auto;
 }
 
@@ -531,7 +531,7 @@ input[type="email"] {
   background-color: transparent;
 }
 
-/* HEADER */
+/* CATALOG-HEADER */
 
 .catalog-header {
   display: flex;
@@ -600,6 +600,7 @@ input[type="email"] {
 
 .card-link__image {
   margin-bottom: 16px;
+	object-fit: contain;
 }
 
 .card-link__title {
