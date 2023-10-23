@@ -127,13 +127,13 @@
               <fieldset class="filter-form__group filter-form__group--price">
                 <legend class="filter-form__title">Стоимость</legend>
                 <div class="filter-form__range range-control">
-                  <div class="range-control__input">
+                  <div class="range-control__input-wrapper">
                     <label class="range-control__label range-control__label--min">
-                      <input type="text" name="min" value="0" placeholder="от">
+                      <input class="input" type="text" name="min" value="0" placeholder="от">
                       <span>от</span>
                     </label>
                     <label class="range-control__label range-control__label--max">
-                      <input type="text" name="max" value="9000">
+                      <input class="input" type="text" name="max" value="9000">
                       <span>до</span>
                     </label>
                   </div>
@@ -349,7 +349,7 @@
                 <p class="subscribe-text__description wrapper-text__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
               </div>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
+                <input class="subscribe-form__input input" type="email" name="email" placeholder="Ваш e-mail">
                 <button class="subscribe-form__button button button--big" type="submit">Подписаться</button>
               </form>
             </div>
