@@ -393,10 +393,19 @@ body {
   color: inherit;
 }
 
+.contacts-address {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts-address__phone {
   font-size: 40px;
   font-style: normal;
   line-height: 50px;
+}
+
+.contacts-address__phone:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 /* CATALOG-PAGE */
