@@ -127,13 +127,13 @@
               <fieldset class="filter-form__group filter-form__group--price">
                 <legend class="filter-form__title">Стоимость</legend>
                 <div class="filter-form__range range-control">
-                  <div class="range-control__input">
+                  <div class="range-control__input-wrapper">
                     <label class="range-control__label range-control__label--min">
-                      <input type="text" name="min" value="0" placeholder="от">
+                      <input class="input" type="text" name="min" value="0" placeholder="от">
                       <span>от</span>
                     </label>
                     <label class="range-control__label range-control__label--max">
-                      <input type="text" name="max" value="9000">
+                      <input class="input" type="text" name="max" value="9000">
                       <span>до</span>
                     </label>
                   </div>
@@ -166,7 +166,7 @@
               </select>
               <ul class="catalog-header__view view-list list">
                 <li class="view-list__item view-list__item--grid">
-                  <button class="view-list__button button" type="button">
+                  <button class="view-list__button button is-current" type="button">
                     <img src="images/grid-mode.svg" alt="Сетка" width="16" height="14">
                     <span class="visually-hidden">Показать сетку</span>
                   </button>
@@ -197,24 +197,16 @@
                     <span class="card-info__text">Гостиница</span>
                     <b class="card-info__price">От 4000 ₽</b>
                   </div>
-                  <ul class="card-buttons list">
-                    <li class="card-buttons__item">
-                      <a class="card-buttons__link button button--small" href="#">Подробнее</a>
-                    </li>
-                    <li class="card-buttons__item">
-                      <button class="card-buttons__favorite button button--small">В избранное</button>
-                    </li>
-                  </ul>
-                  <div class="card-rating">
-                    <div class="card-rating__item card-rating__stars">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
+                  <div class="card-buttons">
+                    <a class="card-buttons__link button button--small" href="#">Подробнее</a>
+                    <button class="card-buttons__favorite button button--small">В избранное</button>
+                    <div class="card-buttons__stars">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
                     </div>
-                    <div class="card-rating__item">
-                      <span class="card-rating__button button button--small">Рейтинг: 8,5</span>
-                    </div>
+                    <span class="card-buttons__rating button button--small">Рейтинг: 8,5</span>
                   </div>
                 </article>
               </li>
@@ -228,24 +220,16 @@
                     <span class="card-info__text">Гостиница</span>
                     <b class="card-info__price">От 5000 ₽</b>
                   </div>
-                  <ul class="card-buttons list">
-                    <li class="card-buttons__item">
-                      <a class="card-buttons__link button button--small" href="#">Подробнее</a>
-                    </li>
-                    <li class="card-buttons__item">
-                      <button class="card-buttons__favorite button button--small is-current">В избранное</button>
-                    </li>
-                  </ul>
-                  <div class="card-rating">
-                    <div class="card-rating__item card-rating__stars">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
+                  <div class="card-buttons">
+                    <a class="card-buttons__link button button--small" href="#">Подробнее</a>
+                    <button class="card-buttons__favorite button button--small is-current">В избранное</button>
+                    <div class="card-buttons__stars">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
                     </div>
-                    <div class="card-rating__item">
-                      <span class="card-rating__button button button--small">Рейтинг: 9,2</span>
-                    </div>
+                    <span class="card-buttons__rating button button--small">Рейтинг: 9,2</span>
                   </div>
                 </article>
               </li>
@@ -259,23 +243,14 @@
                     <span class="card-info__text">Гостиница</span>
                     <b class="card-info__price">От 2500 ₽</b>
                   </div>
-                  <ul class="card-buttons list">
-                    <li class="card-buttons__item">
-                      <a class="card-buttons__link button button--small" href="#">Подробнее</a>
-                    </li>
-                    <li class="card-buttons__item">
-                      <button class="card-buttons__favorite button button--small">В избранное</button>
-                    </li>
-                  </ul>
-                  <div class="card-rating">
-                    <div class="card-rating__item card-rating__stars">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                    </div>
-                    <div class="card-rating__item">
-                      <span class="card-rating__button button button--small">Рейтинг: 6,9</span>
-                    </div>
+                  <div class="card-buttons">
+                    <a class="card-buttons__link button button--small" href="#">Подробнее</a>
+                    <button class="card-buttons__favorite button button--small">В избранное</button>
+                    <div class="card-buttons__stars">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">                    </div>
+                    <span class="card-buttons__rating button button--small">Рейтинг: 6,9</span>
                   </div>
                 </article>
               </li>
@@ -289,22 +264,13 @@
                     <span class="card-info__text">Гостиница</span>
                     <b class="card-info__price">От 1500 ₽</b>
                   </div>
-                  <ul class="card-buttons list">
-                    <li class="card-buttons__item">
-                      <a class="card-buttons__link button button--small" href="#">Подробнее</a>
-                    </li>
-                    <li class="card-buttons__item">
-                      <button class="card-buttons__favorite button button--small">В избранное</button>
-                    </li>
-                  </ul>
-                  <div class="card-rating">
-                    <div class="card-rating__item card-rating__stars">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                      <img class="card-rating__star" src="images/star.svg" alt="" width="18" height="17">
-                    </div>
-                    <div class="card-rating__item">
-                      <span class="card-rating__button button button--small">Рейтинг: 5,0</span>
-                    </div>
+                  <div class="card-buttons">
+                    <a class="card-buttons__link button button--small" href="#">Подробнее</a>
+                    <button class="card-buttons__favorite button button--small">В избранное</button>
+                    <div class="card-buttons__stars">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">
+                      <img class="card-buttons__star" src="images/star.svg" alt="" width="18" height="17">                    </div>
+                    <span class="card-buttons__rating button button--small">Рейтинг: 5,0</span>
                   </div>
                 </article>
               </li>
@@ -345,11 +311,11 @@
 
             <div class="wrapper-text">
               <div class="subscribe-text">
-                <h2 class="subscribe-slogan__title wrapper-text__title title">Подпишитесь на рассылку</h2>
-                <p class="subscribe-slogan__description wrapper-text__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <h2 class="subscribe-text__title wrapper-text__title title">Подпишитесь на рассылку</h2>
+                <p class="subscribe-text__description wrapper-text__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
               </div>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
+                <input class="subscribe-form__input input" type="email" name="email" placeholder="Ваш e-mail">
                 <button class="subscribe-form__button button button--big" type="submit">Подписаться</button>
               </form>
             </div>
