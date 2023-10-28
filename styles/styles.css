@@ -25,6 +25,7 @@
 }
 
 img {
+  height: 100%;
   vertical-align: middle;
 }
 
@@ -237,7 +238,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
+  padding: 66px 0;
 }
 
 .advantages-grid__title {
@@ -265,6 +267,10 @@ body {
 
 .advantages-grid__item--image .advantages-grid__title {
   color: #fff;
+}
+
+.advantages-grid__item--image img {
+  object-fit: contain;
 }
 
 /* ADVANTAGES-SERVICE */
