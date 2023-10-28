@@ -259,7 +259,7 @@ body {
   color: #fff;
 }
 
-.advantages-grid__item--image:nth-of-type(5n) {
+.advantages-grid__item--reverse {
   flex-direction: row-reverse;
 }
 
