@@ -191,6 +191,7 @@ img {
   height: 2px;
   margin: 0 16px;
   background-color: #756257;
+  z-index: 999;
 }
 
 .navigation-list--user {
