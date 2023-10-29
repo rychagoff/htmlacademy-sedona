@@ -525,15 +525,38 @@ img {
 
 .filter-header__breadcrumbs {
   display: flex;
+  align-items: center;
 }
 
 .breadcrumbs-list__item {
-  margin-right: 28px;
+  display: flex;
+  align-items: center;
+  /* margin-right: 28px; */
+}
+
+.breadcrumbs-list__item:not(:last-child)::after {
+  content: '';
+  display: block;
+  position: relative;
+  height: 21px;
+  width: 8px;
+  margin: 0 11px;
+  background-image: url(../images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .breadcrumbs-list__link {
   font-size: 16px;
   color: inherit;
+}
+
+.breadcrumbs-list__link--home {
+  height: 21px;
+  width: 13px;
+  background-image: url(../images/breadcrumbs-home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter-form {
