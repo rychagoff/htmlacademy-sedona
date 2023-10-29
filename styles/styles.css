@@ -128,8 +128,6 @@ img {
   background-color: #fff;
 }
 
-
-
 .wrapper-text {
   width: 680px;
   margin: auto;
@@ -230,6 +228,20 @@ img {
 
 /* HERO */
 
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 57px;
+  width: 100%;
+  background-image: url(../images/divider.svg);
+}
+
 .hero-welcome {
   padding-top: 50px;
   padding-bottom: 82px;
@@ -244,7 +256,6 @@ img {
 }
 
 .hero-welcome__img {
-  display: block;
   margin: 0 auto;
 }
 
