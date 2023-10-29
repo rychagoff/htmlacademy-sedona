@@ -289,6 +289,7 @@ img {
   align-items: center;
   width: 400px;
   min-height: 385px;
+  height: 100%;
   padding: 66px 0;
 }
 
@@ -342,9 +343,6 @@ img {
 /* ADVANTAGES-SERVICE */
 
 .advantages-service__list {
-  /* FLEX */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(3, 400px);
 }
@@ -358,7 +356,9 @@ img {
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
+  height: 100%;
+  padding: 66px 0;
 }
 
 .advantages-service__item .wrapper {
@@ -375,6 +375,7 @@ img {
 }
 
 .advantages-service__image {
+  margin: auto;
   margin-bottom: 30px;
 }
 
