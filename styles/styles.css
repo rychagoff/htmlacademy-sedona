@@ -139,7 +139,7 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .wrapper-text__description {
@@ -263,6 +263,10 @@ img {
 
 .advantages-text {
   margin-bottom: 20px;
+}
+
+.advantages-text .wrapper-text__title {
+  margin-bottom: 25px;
 }
 
 .advantages-grid__list {
@@ -392,6 +396,10 @@ img {
 
 /* SEARCH */
 
+.search .wrapper-text {
+  padding: 96px 0;
+}
+
 .search-text__description {
   margin-bottom: 54px;
 }
@@ -405,6 +413,10 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+}
+
+.subscribe .wrapper-text {
+  padding: 96px 0 104px;
 }
 
 .subscribe-text__title {
