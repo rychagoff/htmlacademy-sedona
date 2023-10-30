@@ -196,7 +196,7 @@ img {
 .logo {
   flex: 0 0 140px;
   height: 64px;
-  margin-right: 30px;
+  margin-right: 28px;
   z-index: 999;
 }
 
@@ -392,6 +392,12 @@ img {
 .advantages-grid__item--image img {
   object-fit: contain;
   margin: auto 0;
+}
+
+/* ADVANTAGES-SLOGAN */
+
+.advantages-slogan .wrapper-text {
+  padding: 64px 0;
 }
 
 /* ADVANTAGES-SERVICE */
