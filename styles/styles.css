@@ -930,11 +930,22 @@ img {
   background-color: #7DB54F;
 }
 
-
-
 .card-buttons__stars {
-  display: flex;
-  align-items: center;
+  background-image: url(../images/star.svg);
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+
+.stars-4 {
+  width: 90px;
+}
+
+.stars-3 {
+  width: 66px;
+}
+
+.stars-2 {
+  width: 42px;
 }
 
 .card-buttons__rating {
