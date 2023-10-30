@@ -86,6 +86,23 @@ img {
   padding-right: 50px;
 }
 
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, .3);
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+}
+
 .input,
 .select {
   font-family: inherit;
@@ -218,7 +235,18 @@ img {
 }
 
 .navigation-list--user .navigation-list__link {
+  display: inline-flex;
   padding: 22px 12px;
+}
+
+.navigation-list__link--search:hover,
+.navigation-list__link--favorite:hover {
+  color: #615048;
+}
+
+.navigation-list__link--search:active,
+.navigation-list__link--favorite:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .count {
@@ -460,6 +488,18 @@ img {
   background-color: #82B3D3;
 }
 
+.subscribe-form__button:hover {
+  background-color: #68A2CA;
+}
+
+.subscribe-form__button:focus {
+  background-color: #68A2CA;
+}
+.subscribe-form__button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, .3);
+}
+
 .inner-page .subscribe {
   background-color: #fff;
   background-image: none;
@@ -494,7 +534,19 @@ img {
   width: 48px;
   height: 40px;
   background-color: #fff;
-  color: inherit;
+  color: #83B3D3;
+}
+
+.social-list__link:hover {
+  color: #68A2CA;
+}
+
+.social-list__link:focus {
+  color: #68A2CA;
+}
+
+.social-list__link:active {
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .contacts-address {
@@ -510,6 +562,21 @@ img {
 
 .contacts-address__phone:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.contacts-address__phone:hover,
+.footer-logo__link:hover {
+  color: #756157;
+}
+
+.contacts-address__phone:focus,
+.footer-logo__link:focus {
+  color: #756157;
+}
+
+.contacts-address__phone:active,
+.footer-logo__link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* CATALOG-PAGE */
@@ -654,11 +721,41 @@ img {
 }
 
 .submit {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   background-color: #82B3D3;
 }
+
+.submit:hover {
+  background-color: #68A2CA;
+}
+
+.submit:focus {
+  background-color: #68A2CA;
+}
+
+.submit:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, .3);
+}
+
 .reset {
+  border: 3px solid transparent;
   background-color: transparent;
+}
+
+.reset:hover {
+  opacity: .6;
+  background-color: inherit;
+}
+
+.reset:focus {
+  border: 3px solid #83B3D3;
+  background-color: inherit;
+}
+
+.reset:active {
+  opacity: .3;
+  background-color: inherit;
 }
 
 /* CATALOG-HEADER */
@@ -699,11 +796,24 @@ img {
   display: flex;
   padding: 15px 14px;
   border: 2px solid #e5e5e5;
+  border-radius: 4px;
   background-color: transparent;
   color: #000;
 }
 
 .view-list__button.is-current {
+  border-color: #000;
+}
+
+.view-list__button:hover {
+  border-color: #000;
+}
+
+.view-list__button:focus {
+  border-color: #68A2CA;
+}
+
+.view-list__button:active {
   border-color: #000;
 }
 
@@ -782,9 +892,39 @@ img {
   background-color: #82B3D3;
 }
 
+.card-buttons__favorite:hover {
+  background-color: #68A2CA;
+}
+
+.card-buttons__favorite:focus {
+  background-color: #68A2CA;
+}
+
+.card-buttons__favorite:active {
+  background-color: #82B3D3;
+}
+
+.card-buttons__favorite:disabled {
+  background-color: #e5e5e5;
+}
+
 .card-buttons__favorite.is-current {
   background-color: #7DB54F;
 }
+
+.card-buttons__favorite.is-current:hover {
+  background-color: #6C9E42;
+}
+
+.card-buttons__favorite.is-current:focus {
+  background-color: #6C9E42;
+}
+
+.card-buttons__favorite.is-current:active {
+  background-color: #7DB54F;
+}
+
+
 
 .card-buttons__stars {
   display: flex;
@@ -792,8 +932,14 @@ img {
 }
 
 .card-buttons__rating {
+  font-size: 16px;
   font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
   text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
   background-color: #F2F2F2;
   color: inherit;
 }
@@ -828,4 +974,17 @@ img {
 }
 .pagination-list__link.is-current {
   background-color: #F2F2F2;
+}
+
+.pagination-list__link:not(.is-current, .is-more):hover {
+  background-color: #68A2CA;
+}
+
+.pagination-list__link:not(.is-current, .is-more):focus {
+  background-color: #68A2CA;
+}
+
+.pagination-list__link:not(.is-current, .is-more):active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
 }
