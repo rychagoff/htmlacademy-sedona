@@ -57,6 +57,10 @@ img {
   margin: 0;
 }
 
+.custom-br {
+  display: block;
+}
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -350,7 +354,11 @@ img {
   margin-bottom: 30px;
 }
 
-.advantages-grid__title:after {
+.advantages-grid__description {
+  margin: 0;
+}
+
+.advantages-grid__description::before {
   content: '';
   display: block;
   position: relative;
@@ -359,10 +367,6 @@ img {
   margin: 30px auto;
   background-color: #000;
   opacity: .3;
-}
-
-.advantages-grid__description {
-  margin: 0;
 }
 
 .advantages-grid__item--image {
@@ -381,7 +385,7 @@ img {
   color: #fff;
 }
 
-.advantages-grid__item--image .advantages-grid__title:after {
+.advantages-grid__item--image .advantages-grid__description::before {
   background-color: #fff;
 }
 
@@ -525,6 +529,7 @@ img {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 150px;
 }
 
 .social-list__link {
@@ -884,7 +889,8 @@ img {
 .card-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 16px;
   margin-top: auto;
 }
 
