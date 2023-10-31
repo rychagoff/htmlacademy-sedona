@@ -233,6 +233,8 @@ img {
 }
 
 .navigation-list--user {
+  justify-content: flex-end;
+  flex: 1 0 135px;
   max-width: 135px;
   margin-right: 20px;
   margin-left: auto;
@@ -270,6 +272,10 @@ img {
 }
 
 .navigation-button {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 160px;
+  gap: 14px;
   padding: 14px 0;
 }
 .navigation-button__link {
