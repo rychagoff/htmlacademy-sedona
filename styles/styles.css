@@ -868,14 +868,7 @@ img {
   border-bottom: 1px solid #e6e6e6;
 }
 
-/* .catalog-product__item {
-  display: grid;
-} */
-
 .card {
-  /* display: grid;
-  grid-template-rows: min-content;
-  gap: 16px; */
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -912,8 +905,9 @@ img {
 }
 
 .card-info__price {
-  flex-shrink: 0;
+  max-width: 139px;
   font-weight: 400;
+  text-align: right;
 }
 
 .card-buttons {
@@ -995,14 +989,13 @@ img {
 
 .pagination-list {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.pagination-list__item {
+/* .pagination-list__item {
   margin-right: 8px;
-}
+} */
 
 .pagination-list__link {
   font-size: 20px;
