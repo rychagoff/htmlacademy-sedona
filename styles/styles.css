@@ -773,10 +773,11 @@ img {
   flex-direction: column;
 }
 
-.range-control__input-wrapper {
+.range-inputs {
   display: flex;
   gap: 2px;
   border-radius: 4px;
+  margin-bottom: 42px;
   overflow: hidden;
 }
 
@@ -800,11 +801,40 @@ img {
   margin-right: 12px;
 }
 
+.range-scale {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.range-scale__bar {
+  position: relative;
+  height: 4px;
+  background-color: #fff;
+}
+
+.range-scale__toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -8px;
+  border-radius: 5px;
+}
+
+.range-scale__toggle--min {
+  left: 0;
+}
+
+.range-scale__toggle--max {
+  right: 0;
+}
+
+
+
 .filter-form__buttons {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  margin-top: 56px;
 }
 
 .filter-form__buttons .button {
@@ -812,7 +842,7 @@ img {
 }
 
 .submit {
-  margin-bottom: 26px;
+  margin-bottom: 32px;
 }
 
 .reset {
