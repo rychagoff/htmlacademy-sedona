@@ -15,8 +15,18 @@
 
 /* BASIC */
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
+}
+
+.link:focus-visible,
+.button:focus-visible,
+.filter-form__label:focus-within .mark,
+.input:focus-visible,
+.quantity-button:focus-visible svg {
+  outline: 3px solid #82B3D3;
 }
 
 html, body {
@@ -35,6 +45,7 @@ body {
   line-height: 21px;
   color: #333;
   background-color: #f2f2f2;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .link {
@@ -151,7 +162,7 @@ img {
 
 .input:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #81B3D3;
+  /* outline: 3px solid #81B3D3; */
 }
 
 .input:hover {
@@ -770,10 +781,6 @@ img {
   background-color: #3F5E72;
 }
 
-.filter-form__label:focus-within .mark {
-  outline: 3px solid #83B3D3;
-}
-
 .filter-form__group--price {
   flex-basis: 288px;
   margin-left: auto;
@@ -861,7 +868,6 @@ img {
   right: 0;
 }
 
-.range-scale__toggle:focus,
 .range-scale__toggle:active {
   outline: 3px solid #83B3D3;
 }
@@ -882,20 +888,12 @@ img {
   margin-bottom: 32px;
 }
 
-/* .reset {
-  border: 3px solid transparent;
-} */
-
 .button--color-transparent {
   background-color: transparent;
 }
 
 .button--color-transparent:hover {
   color: rgba(255, 255, 255, .3);
-}
-
-.button--color-transparent:focus {
-  border: 3px solid #83B3D3;
 }
 
 .button--color-transparent:active {
@@ -1124,12 +1122,17 @@ img {
   /* display: none; */
 }
 
+.modal-container--show {
+  display: block;
+}
+
 .modal {
   position: relative;
   margin: auto;
   padding: 64px 70px;
   border-radius: 30px;
   background-color: #ffffff;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-search {
@@ -1147,7 +1150,6 @@ img {
 
 .modal-close:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #82B3D3;
 }
 
 .modal-close:hover {
@@ -1164,6 +1166,7 @@ img {
 .modal-content__title {
   margin: 0;
   margin-bottom: 64px;
+  padding-right: 40px;
 }
 
 .modal-content__form {
@@ -1242,6 +1245,7 @@ img {
   padding: 0;
   width: 40px;
   border-radius: 0;
+  background-color: #f2f2f2;
   color: #756157;
 }
 
@@ -1254,7 +1258,6 @@ img {
 }
 
 .quantity-button:focus svg {
-  outline: 3px solid #82B3D3;
   border-radius: 4px;
   color: #000;
   opacity: 1;
@@ -1288,6 +1291,7 @@ img {
   padding-bottom: 18px;
   margin-top: 25px;
   line-height: 24px;
+  border-radius: 10px;
 }
 
 /* TOOLTIP */
