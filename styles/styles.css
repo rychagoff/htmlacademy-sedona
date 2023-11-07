@@ -57,6 +57,13 @@ img {
   margin: 0;
 }
 
+.section-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 .custom-br {
   display: block;
 }
@@ -194,14 +201,7 @@ img {
   text-align: center;
 }
 
-.wrapper-text__title {
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.wrapper-text__description {
+.section-description {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
@@ -1109,7 +1109,8 @@ img {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 0.80);;
+  background-color: rgba(242, 242, 242, 0.80);
+  display: none;
 }
 
 .modal {
@@ -1149,12 +1150,8 @@ img {
   opacity: .3;
 }
 
-.modal-content {
-
-}
-
 .modal-content__title {
-
+  margin-bottom: 64px;
 }
 
 .modal-content__form {
