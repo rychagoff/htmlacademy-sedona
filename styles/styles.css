@@ -258,7 +258,7 @@ img {
   line-height: 24px;
 }
 
-.navigation-list__link.is-current:after {
+.navigation-list__link::after {
   content: '';
   display: block;
   position: absolute;
@@ -267,8 +267,20 @@ img {
   bottom: -1px;
   height: 2px;
   margin: 0 16px;
-  background-color: #756257;
+  background-color: transparent;
   z-index: 1;
+}
+
+.navigation-list__link:hover {
+  color: #756257;
+}
+
+ .navigation-list__link:hover::after {
+  background-color: #756257;
+}
+
+.navigation-list__link.is-current::after {
+  background-color: #756257;
 }
 
 .navigation-list--user {
