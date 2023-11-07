@@ -1216,6 +1216,7 @@ img {
   background-image: url(../images/date.svg);
   background-repeat: no-repeat;
   background-position: center right 20px;
+  padding-right: 60px;
 }
 
 .field-group__input .input--number {
