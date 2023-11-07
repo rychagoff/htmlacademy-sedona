@@ -145,9 +145,17 @@ img {
 
 .input {
   border: 0;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-radius: 4px;
   background-color: #f2f2f2;
+}
+
+.input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #81B3D3;
+}
+
+.input:hover {
+  background-color: #e6e6e6;
 }
 
 .select {
@@ -218,7 +226,7 @@ img {
   flex: 0 0 140px;
   height: 64px;
   margin-right: 28px;
-  z-index: 999;
+  z-index: 1;
 }
 
 .navigation {
@@ -250,7 +258,7 @@ img {
   height: 2px;
   margin: 0 16px;
   background-color: #756257;
-  z-index: 999;
+  z-index: 1;
 }
 
 .navigation-list--user {
@@ -342,7 +350,7 @@ img {
   margin-bottom: 20px;
 }
 
-.advantages-text .wrapper-text__title {
+.advantages-text__title {
   margin-bottom: 25px;
 }
 
@@ -517,6 +525,8 @@ img {
 .subscribe-form__input {
   flex-grow: 1;
   font-size: 18px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .subscribe-form__button {
@@ -1110,7 +1120,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.80);
-  display: none;
+  z-index: 2;
+  /* display: none; */
 }
 
 .modal {
@@ -1151,6 +1162,7 @@ img {
 }
 
 .modal-content__title {
+  margin: 0;
   margin-bottom: 64px;
 }
 
@@ -1193,7 +1205,7 @@ img {
 }
 
 .field-group__input .input::placeholder {
-  color: #000;
+  /* color: #000; */
 }
 
 .field-group__input .input--date {
@@ -1206,6 +1218,7 @@ img {
   width: 30px;
   padding: 0;
   text-align: center;
+  border-radius: 0;
 }
 
 .input--number::-webkit-outer-spin-button,
@@ -1220,12 +1233,15 @@ img {
 
 .field-group__input--quantity {
   flex-direction: row;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .quantity-button {
   position: relative;
   padding: 0;
   width: 40px;
+  border-radius: 0;
   color: #756157;
 }
 
