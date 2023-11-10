@@ -404,7 +404,7 @@ img {
   width: 400px;
   min-height: 385px;
   height: 100%;
-  padding: 66px 0;
+  padding: 75px 0;
 }
 
 .advantages-grid__title {
@@ -475,7 +475,7 @@ img {
   width: 400px;
   min-height: 385px;
   height: 100%;
-  padding: 66px 0;
+  padding: 75px 0;
 }
 
 .advantages-service__item .wrapper {
@@ -922,14 +922,13 @@ img {
 }
 
 .catalog-header__title {
-  flex-grow: 1;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-right: auto;
 }
 
 .catalog-header__sorting {
-  margin-left: auto;
   margin-right: 70px;
 }
 
@@ -952,7 +951,7 @@ img {
   flex-wrap: wrap;
   gap: 8px;
   flex: 1 0 160px;
-  /* max-width: 160px; */
+  max-width: 160px;
 }
 
 .view-list__item {
@@ -1166,7 +1165,7 @@ img {
   position: absolute;
   top: 64px;
   right: 52px;
-  padding: 20px;
+  padding: 16px;
   border-radius: 50%;
   background-color: #f2f2f2;
 }
@@ -1215,6 +1214,7 @@ img {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  color: #000;
 }
 
 .field-group__input {
@@ -1323,6 +1323,7 @@ img {
   padding-top: 18px;
   padding-bottom: 18px;
   margin-top: 25px;
+  font-size: 20px;
   line-height: 24px;
   border-radius: 10px;
 }
