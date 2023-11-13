@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
 
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -15,7 +16,7 @@
         <div class="line">
 
           <a class="logo link" href="#">
-            <img class="logo-image" src="images/logo.svg" alt="Логотип агрегатора гостиниц Седоны" width="140" height="70">
+            <img class="logo-image" src="images/logo.svg" alt="Логотип агрегатора гостиниц Седоны." width="140" height="70">
           </a>
 
           <nav class="navigation">
@@ -75,7 +76,7 @@
                   </a>
                 </li>
                 <li class="breadcrumbs-list__item">
-                  <a class="breadcrumbs-list__link link">Гостиницы</a>
+                  <a class="breadcrumbs-list__link link is-current">Гостиницы</a>
                 </li>
               </ol>
             </header>
@@ -114,21 +115,21 @@
                 <ul class="filter-form__list list">
                   <li class="filter-form__item">
                     <label class="filter-form__label">
-                      <input class="radio visually-hidden" type="radio" name="hotel-type" checked>
+                      <input class="radio visually-hidden" type="radio" name="hotel-type" value="hotel" checked>
                       <span class="radio-mark mark"></span>
                       <span class="radio-text">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-form__item">
                     <label class="filter-form__label">
-                      <input class="radio visually-hidden" type="radio" name="hotel-type">
+                      <input class="radio visually-hidden" type="radio" name="hotel-type" value="motel">
                       <span class="radio-mark mark"></span>
                       <span class="radio-text">Мотель</span>
                     </label>
                   </li>
                   <li class="filter-form__item">
                     <label class="filter-form__label">
-                      <input class="radio visually-hidden" type="radio" name="hotel-type">
+                      <input class="radio visually-hidden" type="radio" name="hotel-type" value="apartaments">
                       <span class="radio-mark mark"></span>
                       <span class="radio-text">Апартаменты</span>
                     </label>
@@ -182,25 +183,25 @@
             <header class="catalog-header">
               <h2 class="catalog-header__title title">Найдено гостиниц: <output>38</output></h2>
               <select class="catalog-header__sorting select" name="sorting" id="sorting">
-                <option value="cheap">Сначала дешёвые</option>
-                <option value="expensive">Сначала дорогие</option>
+                <option value="cheap" label="Сначала дешёвые">Сначала дешёвые</option>
+                <option value="expensive" label="Сначала дорогие">Сначала дорогие</option>
               </select>
               <ul class="catalog-header__view view-list list">
                 <li class="view-list__item view-list__item--grid">
                   <button class="view-list__button is-current" type="button">
-                    <img src="images/grid-mode.svg" alt="Сетка" width="16" height="14">
+                    <img src="images/grid-mode.svg" alt="Сетка." width="16" height="14">
                     <span class="visually-hidden">Показать сетку</span>
                   </button>
                 </li>
                 <li class="view-list__item view-list__item--column">
                   <button class="view-list__button" type="button">
-                    <img src="images/column-mode.svg" alt="Колонка" width="16" height="14">
+                    <img src="images/column-mode.svg" alt="Колонка." width="16" height="14">
                     <span class="visually-hidden">Показать колонку</span>
                   </button>
                 </li>
                 <li class="view-list__item view-list__item--listing">
                   <button class="view-list__button" type="button">
-                    <img src="images/list-mode.svg" alt="Список" width="16" height="14">
+                    <img src="images/list-mode.svg" alt="Список." width="16" height="14">
                     <span class="visually-hidden">Показать список</span>
                   </button>
                 </li>
@@ -211,7 +212,7 @@
               <li class="catalog-product__item">
                 <article class="catalog-product__card card">
                   <a class="card-link link" href="#">
-                    <img class="card-link__image" src="images/hotels/hotel-1.jpg" alt="Amara Resort & Spa" width="300" height="212">
+                    <img class="card-link__image" src="images/hotels/hotel-1.jpg" alt="" width="300" height="212">
                     <h3 class="card-link__title title">Amara Resort & Spa</h3>
                   </a>
                   <div class="card-info">
@@ -230,7 +231,7 @@
               <li class="catalog-product__item">
                 <article class="catalog-product__card card">
                   <a class="card-link link" href="#">
-                    <img class="card-link__image" src="images/hotels/hotel-2.jpg" alt="Villas at Poco Diablo" width="300" height="212">
+                    <img class="card-link__image" src="images/hotels/hotel-2.jpg" alt="" width="300" height="212">
                     <h3 class="card-link__title title">Villas at Poco Diablo</h3>
                   </a>
                   <div class="card-info">
@@ -249,7 +250,7 @@
               <li class="catalog-product__item">
                 <article class="catalog-product__card card">
                   <a class="card-link link" href="#">
-                    <img class="card-link__image" src="images/hotels/hotel-3.jpg" alt="Desert Quail Inn" width="300" height="212">
+                    <img class="card-link__image" src="images/hotels/hotel-3.jpg" alt="" width="300" height="212">
                     <h3 class="card-link__title title">Desert Quail Inn</h3>
                   </a>
                   <div class="card-info">
@@ -268,7 +269,7 @@
               <li class="catalog-product__item">
                 <article class="catalog-product__card card">
                   <a class="card-link link" href="#">
-                    <img class="card-link__image" src="images/hotels/hotel-4.jpg" alt="GreenTree Inn" width="300" height="212">
+                    <img class="card-link__image" src="images/hotels/hotel-4.jpg" alt="" width="300" height="212">
                     <h3 class="card-link__title title">GreenTree Inn</h3>
                   </a>
                   <div class="card-info">
@@ -325,7 +326,9 @@
                 <p class="subscribe-text__description section-description">Только полезная информация и никакого спама,<span class="custom-br"></span>честное бойскаутское!</p>
               </div>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="subscribe-form__input input" type="email" name="email" placeholder="Ваш e-mail">
+                <label class="subscribe-form__label">
+                  <input class="subscribe-form__input input" type="email" name="email" placeholder="Ваш e-mail" required>
+                </label>
                 <button class="subscribe-form__button button button--big button--color-accent" type="submit">Подписаться</button>
               </form>
             </div>
@@ -372,7 +375,7 @@
           </div>
 
           <div class="footer-logo">
-            <a class="footer-logo__link link" href="https://htmlacademy.ru/">
+            <a class="footer-logo__link link" href="https://htmlacademy.ru/" aria-label="Ссылка на сайт Академии.">
               <svg xmlns="http://www.w3.org/2000/svg" class="footer-logo__image" width="115" height="34" fill="none" viewBox="0 0 115 34"><path fill="currentColor" d="M0 13.256v2.6h2.5v-2.6H0Zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1v-6.2h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9Zm15 .3h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2Zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3Zm6.7 8.1c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.356h-2v12.7Zm-18.9 7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6Zm18.9-5.1c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2Zm10.9-2.3c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6Zm17.2-7.3c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Zm13.2-9.2c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6Zm19.9-1.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Zm11.2 9.1-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
             </a>
           </div>

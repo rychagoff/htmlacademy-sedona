@@ -53,6 +53,10 @@ body {
   color: #000;
 }
 
+.link.is-current {
+  pointer-events: none;
+}
+
 img {
   display: block;
 }
@@ -175,6 +179,7 @@ img {
   padding-right: 52px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  background-color: transparent;
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 20px) center;
@@ -544,8 +549,13 @@ img {
   display: flex;
 }
 
-.subscribe-form__input {
+.subscribe-form__label {
   flex-grow: 1;
+}
+
+.subscribe-form__input {
+  width: 100%;
+  height: 100%;
   font-size: 18px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -710,6 +720,14 @@ img {
   background-position: center;
 }
 
+.breadcrumbs-list__link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-list__link:active {
+  opacity: 0.3;
+}
+
 /* FILTER-FORM */
 
 .filter-form {
@@ -743,6 +761,7 @@ img {
   /* align-items: center; */
   gap: 16px;
   line-height: 23px;
+  cursor: pointer;
 }
 
 .mark {
@@ -966,6 +985,7 @@ img {
   border-radius: 4px;
   background-color: transparent;
   color: #000;
+  cursor: pointer;
 }
 
 .view-list__button.is-current {
@@ -1018,6 +1038,7 @@ img {
 .card-link__image {
   margin-bottom: 16px;
 	object-fit: contain;
+  background-color: #f2f2f2;
 }
 
 .card-link__title {
@@ -1235,6 +1256,7 @@ img {
 }
 
 .field-group__input .input--date {
+  width: 100%;
   background-image: url("../images/date.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
