@@ -36,8 +36,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   font-family: "PT-Sans", Helvetica, sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -45,7 +44,6 @@ body {
   line-height: 21px;
   color: #333;
   background-color: #f2f2f2;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .link {
@@ -197,6 +195,12 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.page {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+}
+
 .main-page, .inner-page {
   flex-grow: 1;
 }
@@ -264,7 +268,7 @@ img {
 }
 
 .navigation-list--menu .link::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -348,7 +352,7 @@ img {
 }
 
 .hero::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: 0;
@@ -424,7 +428,7 @@ img {
 }
 
 .advantages-grid__description::before {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   height: 2px;
@@ -696,7 +700,7 @@ img {
 }
 
 .breadcrumbs-list__item:not(:last-child)::after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   height: 21px;
@@ -797,7 +801,7 @@ img {
 }
 
 .radio-mark::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1229,7 +1233,7 @@ img {
   grid-column: 1 / -1;
 }
 
-.field-group__text {
+.field-group__label {
   display: block;
   padding: 12px 0;
   font-size: 20px;
@@ -1397,7 +1401,7 @@ img {
 }
 
 .tooltip-text::before {
-  content: '';
+  content: "";
   display: block;
   width: 19px;
   height: 9px;
