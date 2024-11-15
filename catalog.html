@@ -53,7 +53,7 @@
                 </li>
               </ul>
               <div class="navigation-button">
-                <a class="navigation-button__link button button--small button--color-primary" href="#">Хочу сюда!</a>
+                <a class="navigation-button__link button button--small button--color-primary" href="#modal">Хочу сюда!</a>
               </div>
             </nav>
 
@@ -387,7 +387,79 @@
 
       </footer>
 
+      <!-- Модификатор modal-container--show показывает модальное окно -->
+
+      <div class="modal-container" id="modal">
+        <div class="modal modal-search" data-test="modal">
+
+          <section class="modal-content">
+            <h2 class="modal-content__title section-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-content__form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="modal-content__field modal-content__field--date field-group">
+                <label class="field-group__label" for="date-start">Дата Заезда:</label>
+                <div class="field-group__input">
+                  <input id="date-start" class="input input--date" type="text" name="date-start" placeholder="Укажите дату" value="27 апреля 2020">
+                  <span class="alert alert--error">Мы не можем отправить вас в прошлое.</span>
+                </div>
+              </div>
+              <div class="modal-content__field modal-content__field--date field-group">
+                <label class="field-group__label" for="date-end">Дата Выезда:</label>
+                <div class="field-group__input">
+                  <input id="date-end" class="input input--date" type="text" name="date-end" placeholder="Укажите дату" value="1 сентября 2021">
+                  <span class="alert">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </div>
+              <div class="modal-content__field field-group">
+                <label class="field-group__label" for="older">Взрослые:</label>
+                <div class="field-group__input field-group__input--quantity">
+                  <button class="quantity-button button quantity-button--less" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M3 9v2h14V9H3Z"/></svg>
+                  </button>
+                  <input id="older" class="modal-content__input input input--number" type="number" name="older" value="2" max="99">
+                  <button class="quantity-button button quantity-button--more" type="button">
+                    <span class="visually-hidden">Добавить взрослого</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-content__field field-group">
+                <div class="field-group__wrapper">
+                  <label class="field-group__label" for="children">Дети:</label>
+                  <span class="field-group__tooltip tooltip">
+                    <button class="tooltip-button button" type="button" aria-labelledby="tooltip-label-date">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26"><circle cx="13.22" cy="13" r="13" fill="#83B3D3"/><path fill="#fff" fill-rule="evenodd" d="M12.22 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </div>
+                <div class="field-group__input field-group__input--quantity">
+                  <button class="quantity-button button quantity-button--less" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M3 9v2h14V9H3Z"/></svg>
+                  </button>
+                  <input id="children" class="modal-content__input input input--number" type="number" name="children" value="2" max="99">
+                  <button class="quantity-button button quantity-button--more" type="button">
+                    <span class="visually-hidden">Добавить ребёнка</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+                  </button>
+                </div>
+              </div>
+              <button class="modal-content__button button button--small button--color-accent">Найти</button>
+            </form>
+          </section>
+
+          <button class="modal-close button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#000" d="M17.71 4.783 16.418 3.49 10.71 9.198 5.002 3.491 3.71 4.783l5.708 5.708-5.708 5.707 1.292 1.293 5.708-5.708 5.708 5.708 1.292-1.293-5.708-5.707 5.708-5.708Z"/></svg>
+          </button>
+
+        </div>
+      </div>
+
     </div>
+
+    <script src="script.js"></script>
 
   </body>
 </html>
